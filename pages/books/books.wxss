@@ -1,0 +1,60 @@
+.top {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  background: #f2f2f2;
+  line-height: 80rpx;
+}
+
+.line {
+  height: 80rpx;
+  border-bottom: 2px solid red;
+}
+
+.fenlei {
+  padding-top: 80rpx;
+}
+
+.manbook {
+  display: inline-block;
+  width: 33.3%;
+}
+.sex{
+  color: #a2a2a2;
+  padding: 20rpx;
+}
+.books {
+  text-align: center;
+  padding: 20rpx;
+  border: 1px solid #f2f2f2;
+}
+.bookname{
+  font-weight: bold;
+}
+.number{
+  font-size: 26rpx;
+  color: #a2a2a2;
+}
+.paihang{
+   padding-top: 80rpx;
+}
+.list{
+  margin-left: 50rpx;
+  border-bottom: 1px solid #f2f2f2;
+  line-height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.img{
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+}

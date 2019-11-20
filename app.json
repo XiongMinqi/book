@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/books/books",
+    "pages/search/search",
+    "pages/help/help",
+    "pages/classification/classification"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f45",
+    "navigationBarTitleText": "读书神器",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#f35",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书架",
+        "iconPath": "images/icon_书架nor.png",
+        "selectedIconPath": "images/icon_书架nor (1).png"
+      },
+      {
+        "pagePath": "pages/books/books",
+        "text": "书城",
+        "iconPath": "images/icon_书城 nor.png",
+        "selectedIconPath": "images/icon_书城 nor (1).png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/sousuo.png",
+        "selectedIconPath": "images/sousuo (1).png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

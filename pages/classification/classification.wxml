@@ -1,0 +1,13 @@
+<view class="title">
+  <view wx:for="{{typeList}}" wx:key="{{index}}">
+    <view class="hot" hover-class="color">{{item.name}}</view>
+  </view>
+</view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>
+<view></view>

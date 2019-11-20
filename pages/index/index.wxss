@@ -1,0 +1,33 @@
+.body {
+  /* height: 1500rpx;
+  background: skyblue; */
+}
+
+.img {
+}
+
+.image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.top{
+  /* background: skyblue; */
+  padding: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topright{
+  display: flex;
+  align-items: center;
+}
+.help{
+  margin-right: 30rpx;
+  border: 1px solid black;
+  padding: 10rpx 18rpx;
+  border-radius: 18rpx;
+}
+.else{
+  text-align: center;
+  padding-top: 40rpx;
+}

@@ -1,0 +1,19 @@
+<view>
+  <input class="input" placeholder-style="text-align:center" placeholder="请输入书名或作者名" confirm-type="search" />
+</view>
+<view class="check">
+  <view class="search">
+    <view>大家都在搜</view>
+    <view class="icon">
+      <view>
+        <image class="img" src="/images/check.png" />
+      </view>
+      <view>换一换</view>
+    </view>
+  </view>
+  <view>
+    <view></view>
+  </view>
+
+
+</view>

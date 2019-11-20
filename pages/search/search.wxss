@@ -1,0 +1,29 @@
+.input {
+  background: #f2f2f2;
+  height: 60rpx;
+  border-radius: 18rpx;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.check {
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.icon {
+  color: red;
+  display: flex;
+}

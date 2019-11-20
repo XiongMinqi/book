@@ -1,0 +1,12 @@
+.title{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20rpx 30rpx;
+}
+.hot{
+  margin-right: 30rpx;
+}
+.color{
+  color: #f45;
+}
