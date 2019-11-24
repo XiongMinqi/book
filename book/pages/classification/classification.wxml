@@ -1,0 +1,38 @@
+<view class="title">
+  <view wx:for="{{typeList}}" wx:key="{{index}}">
+    <view class="hot {{num===index? 'color' : ''}}" bindtap="color" data-item="{{item}}" data-index="{{index}}">{{item.name}}</view>
+  </view>
+</view>
+<view class="page-section">
+  <scroll-view class="scroll-view" scroll-x="true" bindscroll="scroll" style="width: 100%;height:68rpx">
+    <view class="huadong">
+      <view class="xifenlei">
+        <view class="item {{sum===50? 'bgcolor' : ''}}" bindtap="bgcolor" data-index="{{50}}" data-item="{{'东方玄幻'}}">全部</view>
+        <view wx:for="{{booklist}}" wx:key="{{index}}" class="item">
+          <view class=" {{sum===index? 'bgcolor' : ''}}" bindtap="bgcolor" data-item="{{item}}" data-index="{{index}}">{{item}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>
+
+
+
+<view class="goodsdetails">
+  <view class="goods" bindtap="novel" data-item="{{item}}" data-index="{{index}}" wx:for="{{bookdetails}}" wx:key="{{index}}">
+    <view class="img">
+      <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}"></image>
+    </view>
+    <view class="goodsmsg">
+      <view class="goodstitle">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+      <view class="tags">
+        <view wx:for="{{item.tags}}" wx:if="{{idx<3}}" wx:key="{{idx}}" wx:for-item="itemtag" wx:for-index="idx" class="labal{{idx===0 ? 'yellow' : (idx===1 ? 'blue' : 'red')}}">{{itemtag}}
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

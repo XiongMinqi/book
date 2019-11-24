@@ -1,0 +1,114 @@
+<view>
+  <view class="bgtop"></view>
+  <view class="bgbottom"></view>
+  <view class="novelmsg">
+    <view class="img">
+      <image src="{{'https://statics.zhuishushenqi.com'+novel.cover}}"></image>
+    </view>
+    <view class="title">{{novel.title}}</view>
+    <view class="author">{{novel.author}}</view>
+  </view>
+  <!-- 按钮 -->
+  <view class="btn">
+    <view class="read">
+      <button type="warn" size="mini" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="read" data-item="{{novel}}" data-index="{{index}}"> 开始阅读 </button>
+    </view>
+    <view class="join">
+      <button type="default" size="mini" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="bookcase" data-item="{{novel}}" data-index="{{index}}">
+      <view wx:if="{{rst===true}}">已加入书架</view>
+      <view wx:if="{{rst===false}}">加入书架</view>
+        
+       
+       </button>
+    </view>
+  </view>
+  <!-- 详情 -->
+  <view class="noveldatails">
+    <view class="star">
+      <view class="gengxin">
+        <view class="pingfenstar">
+          <block wx:for="{{one}}" wx:key="{{index}}">
+            <image src='../../images/redstar.png'></image>
+          </block>
+          <block wx:for="{{two}}" wx:key="{{index}}">
+            <image src='../../images/star.png'></image>
+          </block>
+        </view>
+        <view class="update">
+          更新至
+          <text>{{novel.lastChapter}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="details">
+      <view class="choose">
+        <view bindtap="detail" class="line{{number===1?'bg':''}}">详情</view>
+        <view bindtap="pinglun" class="line{{number===0?'bg':''}}">评论({{novel.rating.count}})</view>
+      </view>
+      <view class="introduce">
+        <view class="jianjie" wx:if="{{number === 1}}">
+          <scroll-view scroll-y="true" style="height: 300rpx;" bindscroll="scroll" scroll-top="{{scrollTop}}">
+            简介 : {{novel.longIntro}}
+          </scroll-view>
+          <view class="mulu">
+            <view>
+              <image src="../../images/list.png"></image>
+            </view>
+            <view bindtap="list" data-item="{{novel._id}}">总目录({{novel.chaptersCount}}章)</view>
+          </view>
+
+          <view>
+            <view class="search">
+              <view>看过这本书的人还在看</view>
+              <view>
+                <view bindtap="change" data-item="{{}}" class="icon">
+                  <view>
+                    <image class="searchimg" src="../../images/check.png" />
+                  </view>
+                  <view>换一换</view>
+                </view>
+              </view>
+            </view>
+            <!-- 相关书籍 -->
+            <view class="relation">
+              <view wx:for="{{relation}}" wx:key="{{index}}">
+                <view class="relationmsg" bindtap="relationbook" data-item="{{item}}" data-index="{{index}}">
+                  <view>
+                    <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}"></image>
+                  </view>
+                  <view>{{item.title}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 评论 -->
+        <view wx:if="{{number === 0}}">
+
+          <view class="page-section-spacing">
+
+            <scroll-view scroll-y="true" style="height: 600rpx;" bindscroll="scroll" scroll-top="{{scrollTop}}">
+              <view wx:for="{{comments}}" wx:key="{{index}}" data-item="{{item}}" data-index="{{index}}">
+                <view class="commentsdetails">
+                  <view class="commentsimg">
+                    <image src="{{'https://statics.zhuishushenqi.com'+item.author.avatar}}"></image>
+                  </view>
+                  <view class="commentsmsg">
+                    <view class="nickname">{{item.author.nickname}}</view>
+                    <view>{{item.content}}</view>
+                  </view>
+                </view>
+              </view>
+            </scroll-view>
+
+
+
+          </view>
+
+
+
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

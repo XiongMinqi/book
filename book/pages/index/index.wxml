@@ -1,0 +1,39 @@
+<view class="body">
+  <view class="top">
+    <view class="img" bindtap="choose">
+      <view wx:if="{{rst===true}}">
+        <image class="image" src="../../images/edit.png"></image>
+      </view>
+      <view wx:if="{{rst===false}}">
+        <image class="image" src="../../images/choose.png"></image>
+      </view>
+    </view>
+    <view class="topright">
+      <view class="help" bindtap="help">帮助</view>
+      <view>
+        <image class="image" src="../../images/shuaxin.png"></image>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view wx:if="{{novel.length===0}}">
+      <view class="else">主人还没收藏书籍哦，快去书城收藏吧</view>
+    </view>
+    <view wx:if="{{novel}}">
+      <view class="relation">
+        <view wx:for="{{novel}}" wx:key="{{index}}">
+          <view class="relationmsg" bindtap="read" data-item="{{item.novelmsg}}" data-index="{{index}}">
+            <view>
+              <image src="{{'https://statics.zhuishushenqi.com'+item.novelmsg.cover}}"></image>
+            </view>
+            <view>{{item.novelmsg.title}}</view>
+            <view class="readlist">读到第{{1}}章</view>
+            <view wx:if="{{rst===false}}" catchtap="delete" data-index="{{index}}" class="deleteimg">
+              <image src="../../images/delete-.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<import src="../../lib/wxParse/wxParse.wxml" />
+
+<view class="read">
+  <view class="title">{{title}}</view>
+
+
+  <view class="contents">
+    <template is="wxParse" data="{{wxParseData:courseDetail.nodes}}" />
+  </view>
+
+
+  <!-- 按钮 -->
+  <view class="btn">
+    <view class="readbtn">
+      <button type="warn" size="mini" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="before" data-item="{{item}}" data-index="{{index}}"> 上一章 </button>
+    </view>
+    <view class="join">
+      <button type="default" size="mini" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="after" data-item="{{item}}" data-index="{{index}}"> 下一章 </button>
+    </view>
+  </view>
+</view>

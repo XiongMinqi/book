@@ -1,0 +1,65 @@
+@import "../../lib/wxParse/wxParse.wxss";
+
+.read {
+  padding: 20rpx;
+}
+
+.read {
+  padding: 20rpx 20rpx;
+  font-size: 40rpx;
+  /* text-align: center; */
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+.contents {
+  line-height: 52rpx;
+  text-indent: 2em;
+  font-size: 30rpx;
+}
+
+.wxParse-p {
+  padding: 20rpx 0;
+}
+
+/* 复制 */
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.readbtn {
+  margin-right: 6rpx;
+  border-radius: 40rpx 0 0 40rpx;
+  background: red;
+}
+
+.readbtn button {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  padding: 0 40rpx;
+  background: #f45;
+  border-radius: 40rpx 0 0 40rpx;
+  color: white;
+}
+
+.join {
+  border-radius: 0 40rpx 40rpx 0;
+  background: white;
+}
+
+.join button {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  padding: 0 40rpx;
+  background: #f45;
+  border-radius: 0 40rpx 40rpx 0;
+  color: white;
+}

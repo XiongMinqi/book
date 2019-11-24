@@ -1,0 +1,65 @@
+<view>
+  <input class="input" value="{{inputvalue}}" bindinput="oninput" placeholder-style="text-align:center" placeholder="请输入书名或作者名" confirm-type="search" />
+</view>
+<!-- 输入框没有值 -->
+<view class="check" wx:if="{{searchbook.length===0}}">
+  <!-- 大家都在搜 -->
+  <view class="search">
+    <view>大家都在搜</view>
+    <view bindtap="change" data-item="{{}}" class="icon">
+      <view>
+        <image class="searchimg" src="../../images/check.png" />
+      </view>
+      <view>换一换</view>
+    </view>
+  </view>
+  <!-- 热词 -->
+  <view class="tags">
+    <view wx:for="{{hotwords}}" wx:if="{{index<num}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index" class="labal{{index===0 ? 'yellow' : (index===1 ? 'blue' :  (index===2 ? 'red' : (index===3 ? 'black' : (index===4 ? 'white' : 'purple'))))}}">
+      <view bindtap="getwords" data-item="{{item}}" data-index="{{index}}">{{item}}</view>
+    </view>
+  </view>
+  <!-- 搜索历史 -->
+  <view class="history">
+    <!-- 搜索历史头部 -->
+    <view class="historytop">
+      <view>搜索历史</view>
+      <view class="img" bindtap="clear">
+        <view>
+          <image src="../../images/delete.png"></image>
+        </view>
+        <view>清空</view>
+      </view>
+    </view>
+    <!-- 历史记录 -->
+    <view>
+      <view wx:for="{{histories}}" wx:key="{{index}}">
+        <view class="historyitem" bindtap="getwords" data-item="{{item}}" data-index="{{index}}">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+<!-- 输入框有值 -->
+<view wx:if="{{searchbook.length>0}}">
+  <view class="goodsdetails">
+    <view class="goods" bindtap="novel" data-item="{{item}}" data-index="{{index}}" wx:for="{{searchbook}}" wx:key="{{index}}">
+      <view class="collectimg">
+        <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}"></image>
+      </view>
+      <view class="goodsmsg">
+        <view class="goodstitle">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="shortIntro">{{item.shortIntro}}</view>
+        <view class="collect">
+          <view>最近收藏: {{item.latelyFollower}}</view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+
+
+</view>

@@ -1,0 +1,24 @@
+<view class="top">
+
+  <view wx:if="{{month}}" class="title">
+    <view bindtap="week" class="line{{num===0?'bg':''}}">周榜</view>
+    <view bindtap="month" class="line{{num===1?'bg':''}}">月榜</view>
+    <view bindtap="total" class="line{{num===2?'bg':''}}">总榜</view>
+  </view>
+</view>
+
+
+
+
+<view class="goodsdetails">
+  <view class="goods" bindtap="novel" data-item="{{item}}" data-index="{{index}}" wx:for="{{books}}" wx:key="{{index}}">
+    <view class="img">
+      <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}"></image>
+    </view>
+    <view class="goodsmsg">
+      <view class="goodstitle">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+    </view>
+  </view>
+</view>

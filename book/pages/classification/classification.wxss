@@ -1,0 +1,140 @@
+.title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  z-index: 9;
+}
+
+.hot {
+  margin-right: 30rpx;
+}
+
+.color {
+  color: #f45;
+}
+
+.scroll-view {
+  position: fixed;
+  top: 76rpx;
+}
+
+.huadong {
+  background: white;
+  z-index: 9;
+}
+.page-section{
+  position: fixed;
+  top: 40rpx;
+  z-index: 9;
+  background: white;
+  height: 76rpx;
+}
+.xifenlei {
+  white-space: nowrap;
+  padding: 20rpx 0 20rpx 30rpx;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 26rpx;
+  background: white;
+  z-index: 9;
+}
+
+.goodsdetails {
+  /* border-top: 1px solid black; */
+  margin-top: 148rpx;
+  overflow: hidden;
+}
+
+.item {
+  margin-right: 30rpx;
+  display: inline-block;
+}
+
+.bgcolor {
+  color: #f45;
+}
+
+.goods {
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20rpx;
+  overflow: hidden;
+}
+
+.img {
+  width: 30%;
+  height: 350rpx;
+  margin-right: 3%;
+}
+
+.img image {
+  width: 100%;
+  height: 100%;
+}
+
+.goodsmsg {
+  width: 66%;
+  position: relative;
+}
+
+.goodstitle {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-bottom: 22rpx;
+}
+
+.author {
+  font-size: 26rpx;
+  color: #a2a2a2;
+  margin-bottom: 22rpx;
+}
+
+.shortIntro {
+  font-size: 26rpx;
+  color: #a2a2a2;
+  display: -webkit-box;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical; /*子元素排列 vertical（竖排）*/
+  -webkit-line-clamp: 3; /*设置显示的多少行。*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tags {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.labalyellow {
+  margin-right: 18rpx;
+  padding: 4rpx 8rpx;
+  border-radius: 10rpx;
+  color: white;
+  background: #fc0;
+  font-size: 26rpx;
+}
+
+.labalblue {
+  margin-right: 18rpx;
+  padding: 4rpx 8rpx;
+  border-radius: 10rpx;
+  color: white;
+  background: #0cf;
+  font-size: 26rpx;
+}
+
+.labalred {
+  margin-right: 18rpx;
+  padding: 4rpx 8rpx;
+  border-radius: 10rpx;
+  color: white;
+  background: #f03;
+  font-size: 26rpx;
+}

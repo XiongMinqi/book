@@ -1,0 +1,9 @@
+<!-- <view class="mulu">目录</view> -->
+<view>
+  <view wx:for="{{chapters}}" wx:key="{{index}}">
+    <view class="directory" bindtap="read" data-item="{{item}}" data-index="{{index}}">{{item.title}}    </view>
+</view>
+
+
+
+</view>

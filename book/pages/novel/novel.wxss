@@ -1,0 +1,238 @@
+.bgtop {
+  width: 100%;
+  height: 180rpx;
+  background: #f45;
+}
+
+.bgbottom {
+  width: 100%;
+  height: 380rpx;
+  background: white;
+}
+
+.novelmsg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+}
+
+.img {
+  margin: 0 auto;
+  width: 250rpx;
+  height: 350rpx;
+  margin-bottom: 20rpx;
+}
+
+.img image {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  width: 100%;
+}
+
+.author {
+  font-size: 26rpx;
+  color: #a2a2a2;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 516rpx;
+  left: 15%;
+}
+
+.read {
+  border-radius: 48rpx;
+  margin-right: 76rpx;
+  border: 1px solid #f2f2f2;
+  /* background: red; */
+}
+
+.read button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12rpx 48rpx;
+  background: #f45;
+  border-radius: 40rpx;
+  color: white;
+}
+
+.join {
+  border-radius: 48rpx;
+  border: 1px solid #f2f2f2;
+  /* background: white; */
+}
+
+.join button {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  padding: 12rpx 48rpx;
+  background: white;
+  border-radius: 40rpx;
+  color: #a2a2a2;
+}
+
+.noveldatails {
+  width: 100%;
+  min-height: 646rpx;
+  background: #f2f2f2;
+}
+
+.star {
+  padding-top: 50rpx;
+}
+
+.star image {
+  height: 36rpx;
+  width: 36rpx;
+  display: inline-block;
+}
+
+.gengxin {
+  text-align: center;
+  padding: 30rpx;
+}
+
+.pingfenstar {
+  margin-bottom: 10rpx;
+}
+
+.pingfenstar image {
+  margin-right: 24rpx;
+}
+
+.update {
+}
+
+.update text {
+  color: #3cf;
+}
+
+.details {
+  width: 96%;
+  min-height: 400rpx;
+  position: absolute;
+  top: 800rpx;
+  left: 2%;
+  background: white;
+}
+
+.line {
+  height: 80rpx;
+  color: #a9a9a9;
+  font-size: 26rpx;
+  /* display: flex;
+  align-items: center; */
+}
+
+.linebg {
+  font-size: 26rpx;
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.choose {
+  display: flex;
+  line-height: 80rpx;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 10rpx 30rpx; */
+}
+
+.introduce {
+  border-top: 1px solid #f2f2f2;
+  min-height: 50rpx;
+  font-size: 26rpx;
+  padding: 20rpx;
+  line-height: 46rpx;
+  /* background: skyblue; */
+}
+
+.commentsdetails {
+  display: flex;
+  padding: 20rpx;
+  width: 100%;
+}
+
+.commentsimg {
+  width: 94rpx;
+  height: 94rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.commentsimg image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.commentsmsg {
+  width: 80%;
+}
+
+.nickname {
+  color: rgb(255, 112, 68);
+}
+
+.mulu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a2a2a2;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.mulu image {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  margin-top: 30rpx;
+}
+
+.searchimg {
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: red;
+  display: flex;
+}
+
+.relation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.relationmsg {
+  /* width: 32%; */
+  text-align: center;
+}
+
+.relationmsg image {
+  width: 190rpx;
+  height: 270rpx;
+}

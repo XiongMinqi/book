@@ -1,0 +1,60 @@
+<view class="top">
+  <view class="title">
+    <view bindtap="fenlei" class="line{{num===0?'bg':''}}">分类</view>
+    <view bindtap="paihang" class="line{{num===1?'bg':''}}">排行</view>
+  </view>
+</view>
+<view wx:if="{{num===1}}" class="fenlei">
+  <view>
+    <view class="sex">男生</view>
+    <view class="manbook" wx:for="{{man}}" wx:key="{{index}}">
+      <view class="books" bindtap="classification" data-item="{{item}}" data-index="{{index}}">
+        <view class="bookname">{{item.name}}</view>
+        <view class="number">{{item.bookCount}}本</view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class="sex">女生</view>
+    <view class="manbook" wx:for="{{woman}}" wx:key="{{index}}">
+      <view class="books" bindtap="female" data-item="{{item}}" data-index="{{index}}">
+        <view class="bookname">{{item.name}}</view>
+        <view class="number">{{item.bookCount}}本</view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class="sex">出版</view>
+    <view class="manbook" wx:for="{{press}}" wx:key="{{index}}">
+      <view class="books" bindtap="publish" data-item="{{item}}" data-index="{{index}}">
+        <view class="bookname">{{item.name}}</view>
+        <view class="number">{{item.bookCount}}本</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 排行 -->
+<view class="paihang" wx:if="{{num===0}}">
+  <view>
+    <view>
+      <view class="sex">女生</view>
+      <view class="list" bindtap="femaledetail" data-item="{{item}}" data-index="{{index}}" wx:for="{{female}}" wx:key="{{index}}">
+        <view>
+          <image class="img" src="{{'https://statics.zhuishushenqi.com'+item.cover}}"></image>
+        </view>
+        <view class="paihangtitle">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+   <view>
+    <view>
+      <view class="sex">男生</view>
+      <view class="list" bindtap="femaledetail" data-item="{{item}}" data-index="{{index}}" wx:for="{{male}}" wx:key="{{index}}">
+        <view>
+          <image class="img" src="{{'https://statics.zhuishushenqi.com'+item.cover}}"></image>
+        </view>
+        <view class="paihangtitle">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>
